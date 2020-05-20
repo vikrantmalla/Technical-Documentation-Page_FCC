@@ -1,0 +1,282 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>Dart Documentation</header>
+        <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#Flutter">Flutter</a></li>
+            <li><a class="nav-link" href="#Variable">Variable</a></li>
+            <li><a class="nav-link" href="#Data_type">Data Type</a></li>
+            <li><a class="nav-link" href="#Decision_making_and_loops">Decision Making and Loops </a></li>
+            <li><a class="nav-link" href="#Functions">Functions </a></li>
+            <li><a class="nav-link" href="#Object_oriented_programming">Object Oriented Programming</a></li>
+            <hr>
+        </ul>
+
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <article>
+                <h1>Dart history</h1>
+                <p>
+                    Dart 1.0 was released on November 14th, 2013 by Google and was founded by Lars Bak and Kasper Lund.
+                    It aims to help developers build modern web and mobile applications. It covers client, server, and
+                    now mobile with Flutter. Coming with a range of tools including a virtual machine, core libraries
+                    and package management repository, it lends enough ammunition for you to get started on your next
+                    project.
+                </p>
+                <h1>Dart is Object-Oriented</h1>
+                <p>
+                    Smalltalk was released in the 1970s and was one of the first pure object-oriented programming
+                    languages. You can now find object-oriented programming everywhere. It has dominated the world of
+                    programming languages.</p>
+
+                <p> The concept behind object-oriented programming is quite simple: all but the most trivial programs
+                    require a particular form of structure.</p>
+
+                <p> The most clear-cut way of achieving this particular structure is by using the concept of storage
+                    containers. A programming language can be divided into data and operations to be performed on data.
+                    We can store specific data and operations in some type of container. Furthermore, these containers
+                    are made to be general. Hence, they not only store data and operations but they are themselves
+                    values that can be stored in other containers and passed as parameters to other operations. In
+                    object-oriented programming, these containers are known as objects.</p>
+
+                <p>Alan Kay, the inventor of Smalltalk, remarked that in this way the simplest object has the same
+                    construction principle as a full computer: it combines data with operations under a formalized
+                    interface.</p>
+
+                <p> And now, even though object-oriented programming can be found in a multitude of languages, very few
+                    actually follow the principles set by Smalltalk. Dart, on the other hand, is a pure object-oriented
+                    programming language with every value being an object.</p>
+                </p>
+                <h1>Dart: Through the Eyes of JavaScript </h1>
+                <p>
+                    Dart is a clean, simple, class-based object-oriented language that has more structure than
+                    JavaScript, the programming language it is heavily based on. It’s great for developers that are
+                    interested in having a structure in their programming language so that they can easily do
+                    refactoring and build large web applications.</p>
+
+                <p> According to the founders, one of the things they focused on while creating the language is that it
+                    be compatible with the web. Hence, one of the most important components is the Dart to JavaScript
+                    compiler. It translates the Dart source code to JavaScript and ensures that you get the same
+                    semantics as if you run it on top of the JavaScript virtual machine.</p>
+                </p>
+
+            </article>
+        </section>
+        <section class="main-section" id="Flutter">
+            <header>Flutter</header>
+            <article>
+                <p>
+                    Flutter has been able to grab the attention of the development community by introducing a style that
+                    allows for expressive liberty making it a joy to build UIs for mobile apps. It incorporates certain
+                    concepts familiar to modern development experiences like reactive programming and widget composition
+                    while using the Dart platform as its main base of operations.
+                </p>
+                <p>
+                    The Flutter team evaluated more than a dozen languages and picked Dart because it matched the way
+                    they were building user interfaces. Let’s see what Dart offers and why it was chosen by Flutter.
+                </p>
+                <h1>Optimized for UI</h1>
+                <ul style="list-style-type: disc">
+                    <li>
+                        <p>
+                            Asynchronous operations let your program complete work while waiting for another operation
+                            to finish. Here are some common asynchronous operations:
+
+                        <ul style="list-style-type: circle">
+                            <li>Fetching data over a network</li>
+                            <li>Writing to a database </li>
+                            <li>Reading data from a file </li>
+                        </ul>
+                        </p>
+
+                    </li>
+                    <li>
+                        Most computers, even on mobile platforms, have multi-core CPUs. To take advantage of all those
+                        cores, developers traditionally use shared-memory threads running concurrently. However,
+                        shared-state concurrency is error-prone and can lead to complicated code. Instead of threads,
+                        all Dart code runs inside of isolates. Each isolate has its own memory heap, ensuring that no
+                        isolate’s state is accessible from any other isolate.
+                    </li>
+                    <li>
+                        A programming language optimized for building user interfaces with features for expanding
+                        collections, and for customizing the UI for each platform.
+                    </li>
+
+                </ul>
+                <h1>Dart: Through the Eyes of JavaScript </h1>
+                <p>
+                    Dart is a clean, simple, class-based object-oriented language that has more structure than
+                    JavaScript, the programming language it is heavily based on. It’s great for developers that are
+                    interested in having a structure in their programming language so that they can easily do
+                    refactoring and build large web applications.</p>
+
+                <p> According to the founders, one of the things they focused on while creating the language is that it
+                    be compatible with the web. Hence, one of the most important components is the Dart to JavaScript
+                    compiler. It translates the Dart source code to JavaScript and ensures that you get the same
+                    semantics as if you run it on top of the JavaScript virtual machine.</p>
+                </p>
+
+            </article>
+        </section>
+        <section class="main-section" id="Variable">
+            <header>Variable </header>
+            <article>
+                <h1>Variable</h1>
+                <p>
+                    Variable is named storage location and Data types simply refers to the type and size of
+                    data associated with variables and functions.
+                </p>
+                <p>
+                    Dart uses var keyword to declare the variable. The syntax of var is defined below,
+                    <code>var x = 42.</code>
+                <p>The final and const keyword are used to declare constants. They are defined as below:</p>
+                <code>void main() {
+                    final a = 12;
+                    const pi = 3.14;
+                    print(a);
+                    print(pi);
+                   }</code>
+
+            </article>
+        </section>
+        <section class="main-section" id="Data_type">
+            <header>Data Type</header>
+            <article>
+                <h1>Data Type</h1>
+                <p>
+                    Data types can be found all around us; numbers, alphabets, or characters which are classified based
+                    on the similar properties they share.<br>
+                    Dart language supports the following data types:
+
+                <ul style="list-style-type: disc">
+                    <li>Numbers: It is used to represent numeric literals – Integer and Double.</li>
+                    <li>Strings: It represents a sequence of characters. String values are specified in either
+                        single or double quotes.</li>
+                    <li>Booleans: Dart uses the bool keyword to represent Boolean values – true and false.</li>
+                    <li>Lists and Maps: It is used to represent a collection of objects. </li>
+                    <li>Dynamic: If the variable type is not defined, then its default type is dynamic.</li>
+                </ul>
+
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="Decision_making_and_loops">
+            <header>Decision Making and Loops</header>
+            <article>
+                <p>
+                    A decision making block evaluates a condition before the instructions are executed. Dart
+                    supports If, If..else and switch statements.<br>
+                    Loops are used to repeat a block of code until a specific condition is met. Dart supports
+                    for, for..in , while and do..while loops.<br>
+                    Let us understand a simple example about the usage of control statements and loops:
+                    <code>
+                            void main() {
+                                for( var i = 1 ; i <= 10; i++ ) {
+                                if(i%2==0)
+                                {
+                                print(i);
+                                }
+                                }
+                               }
+                               
+                        </code>
+                    The above code prints the even numbers from 1 to 10.
+
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="Functions">
+            <header>Functions</header>
+            <article>
+                <p>
+                    A function is a group of statements that together performs a specific task. Let us look into
+                    a simple function in Dart as shown here:
+
+                    <code>
+                        void main() {
+                            add(3,4);
+                           }
+                           void add(int a,int b) {
+                            int c;
+                            c=a+b;
+                            print(c);
+                           }
+                                   
+                            </code>
+                            The above function adds two values and produces 7 as the output
+
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="Object_oriented_programming">
+            <header>Object Oriented Programming
+            </header>
+            <article>
+                <p>
+                    Dart is an object-oriented language. It supports object-oriented programming features like
+                    classes, interfaces, etc.<br>
+                    A class is a blueprint for creating objects. A class definition includes the following:
+                    <ul style="list-style-type: disc">
+                        <li>Fields</li>
+                        <li>Getters and setters</li>
+                        <li>Constructors</li>
+                        <li>Functions </li>
+                    </ul>
+                    Now, let us create a simple class using the above definitions:
+                    <code>
+                        class Employee {
+                            String name;
+                            //getter method
+                            String get emp_name {
+                            return name;
+                            }
+                           
+                            //setter method
+                            void set emp_name(String name) {
+                            this.name = name;
+                            }
+                           
+                            //function definition
+                            void result()
+                            {
+                            print(name);
+                            }
+                           
+                           }
+                           void main() {
+                            //object creation
+                            Employee emp = new Employee();
+                            emp.name="employee1";
+                            emp.result(); //function call
+                           }
+                                   
+                            </code>
+
+                   
+
+                </p>
+            </article>
+        </section>
+
+
+
+
+
+    </main>
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</html>
